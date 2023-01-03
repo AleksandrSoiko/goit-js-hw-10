@@ -7,9 +7,12 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: rgba(240, 248, 255, 0.258);
   color: #212121;
   line-height: 1.5;
+  background-image: url(../img/aged-pirates-treasure-map-background-illustration-71899213.jpg);
+  background-size: cover;
+  padding-left: 40px;
 }
 
 #search-box {
@@ -17,4 +20,18 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+}
+.country-list {
+  list-style: none;
+}
+.country_item {
+  display: flex;
+  align-items: center;
+}
+.country_img {
+  margin-right: 10px;
+}
+
+.country-info_container {
+  display: inline-flex;
 }
