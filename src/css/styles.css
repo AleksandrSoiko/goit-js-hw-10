@@ -23,6 +23,7 @@ body {
 }
 .country-list {
   list-style: none;
+  padding-left: 0;
 }
 .country_item {
   display: flex;
@@ -47,4 +48,8 @@ body {
   font-size: 20px;
   margin-top: 0;
   margin-bottom: 0;
+}
+.country_item > .country_name {
+  font-size: 18;
+  font-weight: 600;
 }
