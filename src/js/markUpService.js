@@ -17,12 +17,12 @@ export default class markupService {
       .map(({ flags: { svg }, name, capital, population } = item) => {
         return `
               <div class="country-info_container">
-              <img class="country_img" src="${svg}" width="60px" height="40">
+              <img class="country_img" src="${svg}" width="30px" height="20">
               <p class="country_name">${name}</p>
               </div>
-              <p>Capital: ${capital}</p>
-              <p>Population: ${population}</p>
-              <p>Languages: ${language}</p>
+              <p><span class="accent">Capital:</span> ${capital}</p>
+              <p><span class="accent">Population:</span> ${population}</p>
+              <p><span class="accent">Languages:</span> ${language}</p>
               `;
       })
       .join('');

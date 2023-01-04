@@ -34,4 +34,17 @@ body {
 
 .country-info_container {
   display: inline-flex;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+}
+.accent {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.country_name {
+  font-weight: 800;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
