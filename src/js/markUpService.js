@@ -26,6 +26,7 @@ export default class markupService {
               `;
       })
       .join('');
+    console.log(array);
     return markup;
   }
 

@@ -1,5 +1,6 @@
 const debounce = require('lodash.debounce');
 import Notiflix, { Notify } from 'notiflix';
+import { fetchCountries } from './fetchCountries';
 const refs = {
   input: document.querySelector('#search-box'),
   list: document.querySelector('.country-list'),
@@ -18,15 +19,7 @@ function searchCountry() {
     return;
   }
 
-  fetch(
-    `https://restcountries.com/v2/name/${refs.input.value.trim()}?fields=name,capital,population,flags,languages`
-  )
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(response.status);
-      }
-      return response.json();
-    })
+  fetchCountries(refs.input.value.trim())
     .then(data => {
       if (data.length > 10) {
         Notify.warning(
